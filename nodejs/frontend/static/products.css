@@ -1,0 +1,222 @@
+
+.filters-div{
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    width:fit-content;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.645);  
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px  #cfcfcf  , -2px -2px 4px  #cfcfcf;
+    display: flex;
+    padding: 5px;
+}
+.filter-item
+{
+    width: fit-content;
+    border-style: solid;
+    margin-top: 10px;
+    border-width: 0px 1px 0px 0px;
+    padding-top: 2px;
+    border-color: rgba(0, 0, 0, 0.149);
+    margin-left: 10px;
+    display: block;
+}
+
+.input-price-value
+{
+  max-width: 40px;
+  margin-left: 5px;
+  height: 25px;
+  border-radius: 5px;
+  border-width: 0px;
+  margin-bottom: 10px;
+}
+
+.select-item
+{
+    height: 30px;
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(78, 78, 78);
+    border-width: 0px;
+    margin-bottom: 10px;
+}
+
+#products-section{ 
+  width: 85%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+.product-div
+{
+    width: 300px;
+    height: fit-content;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 1%;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.668),-2px -2px 3px rgba(128, 128, 128, 0.668);
+    transition-duration: 0.4s;
+}
+.product-image-div{
+    height: 275px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 2px 2px 5px #9c9c9c, -2px -2px 5px #9c9c9c;
+    overflow: hidden;
+}
+.product-image{
+    height: 275px;
+    border-radius: 0px 0px 0px 0px;
+}
+.product-inform
+{
+    margin-top:10px;
+    height: 80px;
+    width: 100%;
+}
+.product-title{
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #303030e9;
+    text-align: left;
+    padding-top: 5px;
+    border-color: #9c9c9c;
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+    overflow: hidden;
+}
+.product-title-a{
+    
+    width: 100%;
+    border-width: 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000e9;text-decoration: none;
+    height: 100px;
+}
+
+.product-discription-a
+{
+    width: 100%;
+    color: #000000e9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50%;
+}
+.product-discription{
+    width: 95%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000e9;
+    border-width:1px 1px 1px 1px;
+    padding-top: 5px;
+    margin: 4px;
+    border-color: #9c9c9c;
+    text-align: center;
+    font-size: small;
+    color: #0000009c;
+    height: 45px;
+    overflow: hidden;
+}
+.product-buttons-div{
+    width:100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.chat-button
+{
+    width:90%;
+    height: 100%;
+    border-width: 0px;
+    background-image: url(./icons/chat.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius:4px;
+}
+.buy-button
+{
+    width:100%;
+    height: 100%;
+    border-width: 0px 1px 0px 0px;
+    border-color: #a9a9a95e;
+    background-image: url(./icons/buy-cart.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: rgba(40, 196, 40, 0.696);
+    border-radius:4px;
+}
+.product-price-rate-div{
+  display:flex;
+  justify-content: space-between;
+  width: 95%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+  padding: 4px;
+}
+
+.checked
+{
+    color: orange;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+
+ 
+    #products-section{
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2%;
+    }
+    
+    .filters-div 
+    {
+    margin-top: 10px;
+    width:fit-content;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.645);  
+    font-size: 15px;
+    border-radius: 0px;
+    box-shadow: 1px 1px 5px 1px #9c9c9c  , -1px -1px 5px 1px #9c9c9c;
+    display: flex;
+    padding: 5px;
+   }
+.input-price-value
+{
+  max-width: 40px;
+  margin-left: 5px;
+  height: 25px;
+  border-radius: 5px;
+  border-width: 0px;
+  margin-bottom: 10px;
+}
+.filter-item
+{
+    font-size: 13px;
+    width: fit-content;
+    height: fit-content;
+    border-style: solid;
+    margin-top: 10px;
+    border-width: 0px 0.5px 0px 0px;
+    padding-top: 2px;
+    border-color: rgba(0, 0, 0, 0.149);
+    margin-left: 7px;
+    display: block;
+}
+
+
+
+    
+}

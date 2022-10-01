@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>homepage</title>
+  </head>
+  <body>
+  </body>
+  
+  <form id ="up-loadform">
+   <input type = "file" id = "file"/>
+   <button type = "submit">up load file</button>
+  </form>          
+  <script type  = "module">
+    import {findCookie} from './scripts/utils/Cookies.js'
+    let uploadFrom = document.getElementById('up-loadform')
+    uploadFrom.addEventListener('submit' , (event) =>{
+      const authKey = "Bearer "+ findCookie('session_key')
+      event.preventDefault();
+      const file = document.getElementById('file').files[0];
+      const payload = new FormData();
+      console.log(file)
+      payload.append('profile_pic',file)
+      fetch('http://127.0.0.1:5000/api/v1/users/upload-profile-picture' ,{method:'POST' , body:payload,headers : {authorization:authKey}}).then (res=>{
+        console.log(res)
+      }).catch(err=>{
+        console.log(err)
+      })
+    })
+    </script>
+  </html>
